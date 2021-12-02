@@ -57,6 +57,10 @@
 *.tvsconfig
 *.dsk
 
+# Arquivos de atualização do projeto
+*.tmp
+*.bat
+
 # Delphi history and backups
 __history/
 __recovery/
