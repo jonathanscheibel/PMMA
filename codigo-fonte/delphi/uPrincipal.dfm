@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 235
-  Top = 137
+  Left = 395
+  Top = 157
   Width = 987
   Height = 509
   Caption = 'Pol'#237'cia Militar de Minas Gerais - Meio Ambiente'
@@ -798,7 +798,6 @@ object frmPrincipal: TfrmPrincipal
         Height = 25
         Caption = 'Button1'
         TabOrder = 0
-        OnClick = Button1Click
       end
     end
     object TabSheet2: TTabSheet

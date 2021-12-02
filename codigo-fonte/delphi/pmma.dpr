@@ -3,7 +3,8 @@ program pmma;
 uses
   Forms,
   uPrincipal in 'uPrincipal.pas' {frmPrincipal},
-  uLogin in 'formularios\uLogin.pas' {frmLogin};
+  uLogin in 'formularios\uLogin.pas' {frmLogin},
+  uAtualizar in 'unidades\uAtualizar.pas';
 
 {$R *.res}
 

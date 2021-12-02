@@ -23,7 +23,6 @@ type
     procedure Cadastro2Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
-    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -51,11 +50,7 @@ procedure TfrmPrincipal.FormCloseQuery(Sender: TObject;
   var CanClose: Boolean);
 begin
   Application.Terminate;
-end;
-
-procedure TfrmPrincipal.Button1Click(Sender: TObject);
-begin
-  //
+  raise Exception
 end;
 
 end.

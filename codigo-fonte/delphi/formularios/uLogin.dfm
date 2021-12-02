@@ -1,6 +1,6 @@
 object frmLogin: TfrmLogin
-  Left = 324
-  Top = 167
+  Left = 342
+  Top = 164
   Width = 212
   Height = 146
   BorderIcons = [biSystemMenu]
@@ -58,5 +58,14 @@ object frmLogin: TfrmLogin
     Caption = 'Entrar'
     TabOrder = 2
     OnClick = btnEntrarClick
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 16
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 3
+    OnClick = Button1Click
   end
 end
