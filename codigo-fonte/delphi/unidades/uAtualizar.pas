@@ -58,7 +58,7 @@ begin
     arquivo.Add('cd C:\Program Files (x86)\PMMA\PMMA');
     arquivo.Add('del "C:\Program Files (x86)\PMMA\PMMA\pmma.exe" /Q');
     arquivo.Add('ren "pmma.tmp" "pmma.exe"');
-    arquivo.Add('start pmma.exe');
+    arquivo.Add('start pmma.exe ATUALIZADO');
     arquivo.Add('del ' + NAME_BAT + ' /Q');
     arquivo.SaveToFile(getNomeArquivoDeLote());
   finally
@@ -87,7 +87,8 @@ begin
 end;
 
 initialization
-  if not FileExists(getNomeArquivoDeLote()) then
-    atualizar();
+  if AnsiUpperCase(ParamStr(1)) = '' then
+    if not FileExists(getNomeArquivoDeLote()) then
+      atualizar();
   
 end.
