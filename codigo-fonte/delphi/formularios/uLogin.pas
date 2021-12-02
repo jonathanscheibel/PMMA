@@ -40,7 +40,7 @@ end;
 procedure TfrmLogin.Button1Click(Sender: TObject);
 var FileOnNet, LocalFileName: string;
 begin
-  FileOnNet:='https://raw.githubusercontent.com/jonathanscheibel/PMMA/main/pmma.exe?token=AB3ULWV5UZJVK5MK6CKIEYTBVAMI2';
+  FileOnNet:='https://raw.githubusercontent.com/jonathanscheibel/PMMA/main/pmma.exe';
   LocalFileName:='C:\Users\Jonathan\Downloads\pmma.exe';
 
   if GetInetFile(FileOnNet,LocalFileName)=True then
