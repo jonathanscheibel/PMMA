@@ -13,6 +13,7 @@ type
     Label2: TLabel;
     Edit2: TEdit;
     btnEntrar: TButton;
+    Label3: TLabel;
     procedure btnEntrarClick(Sender: TObject);
   private
     { Private declarations }

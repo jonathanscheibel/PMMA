@@ -29,6 +29,13 @@ object frmLogin: TfrmLogin
     Height = 13
     Caption = 'Senha:'
   end
+  object Label3: TLabel
+    Left = 16
+    Top = 32
+    Width = 67
+    Height = 13
+    Caption = 'DEPURACAO'
+  end
   object Edit1: TEdit
     Left = 64
     Top = 8
