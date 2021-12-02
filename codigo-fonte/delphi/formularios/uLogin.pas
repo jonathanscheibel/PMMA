@@ -15,7 +15,6 @@ type
     btnEntrar: TButton;
     Button1: TButton;
     procedure btnEntrarClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,20 +35,6 @@ begin
   frmPrincipal.Show;
   frmLogin.Visible := False;
 end;
-
-procedure TfrmLogin.Button1Click(Sender: TObject);
-var FileOnNet, LocalFileName: string;
-begin
-  FileOnNet:='https://raw.githubusercontent.com/jonathanscheibel/PMMA/main/pmma.exe';
-  LocalFileName:='C:\Users\Jonathan\Downloads\pmma.exe';
-
-  if GetInetFile(FileOnNet,LocalFileName)=True then
-  ShowMessage('Download successful')
-  else
-  ShowMessage('Error in file download')
-
-end;
-
 
 
 end.
