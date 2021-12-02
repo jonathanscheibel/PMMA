@@ -1,10 +1,10 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 529
-  Top = 307
+  Left = 368
+  Top = 161
   Width = 987
   Height = 509
   Caption = 'Pol'#237'cia Militar de Minas Gerais - Meio Ambiente'
-  Color = clWhite
+  Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -780,41 +780,83 @@ object frmPrincipal: TfrmPrincipal
         Width = 50
       end>
   end
-  object pcCadastro: TPageControl
+  object GroupBox1: TGroupBox
     Left = 0
     Top = 0
     Width = 971
     Height = 432
-    ActivePage = TabSheet1
     Align = alClient
+    Caption = ' CADASTRO: '
     TabOrder = 1
-    Visible = False
-    object TabSheet1: TTabSheet
-      Caption = 'TabSheet1'
-      object Button1: TButton
-        Left = 96
-        Top = 32
-        Width = 75
-        Height = 25
-        Caption = 'Button1'
+    object pnlTopo: TPanel
+      Left = 2
+      Top = 15
+      Width = 967
+      Height = 82
+      Align = alTop
+      TabOrder = 0
+      object BitBtn1: TBitBtn
+        Left = 0
+        Top = 1
+        Width = 129
+        Height = 81
+        Caption = 'DEN'#218'NCIAS'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = 53970
+        Font.Height = -19
+        Font.Name = 'Franklin Gothic Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
         TabOrder = 0
       end
     end
-    object TabSheet2: TTabSheet
-      Caption = 'TabSheet2'
-      ImageIndex = 1
-    end
-    object TabSheet3: TTabSheet
-      Caption = 'TabSheet3'
-      ImageIndex = 2
-    end
-    object TabSheet4: TTabSheet
-      Caption = 'TabSheet4'
-      ImageIndex = 3
-    end
-    object TabSheet5: TTabSheet
-      Caption = 'TabSheet5'
-      ImageIndex = 4
+    object Panel1: TPanel
+      Left = 2
+      Top = 97
+      Width = 967
+      Height = 333
+      Align = alClient
+      Caption = 'Panel1'
+      TabOrder = 1
+      object pcCadastro: TPageControl
+        Left = 1
+        Top = 1
+        Width = 965
+        Height = 331
+        ActivePage = TabSheet1
+        Align = alClient
+        TabOrder = 0
+        Visible = False
+        object TabSheet1: TTabSheet
+          Caption = 'DEN'#218'NCIAS'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clAqua
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+        end
+        object TabSheet2: TTabSheet
+          Caption = 'DDU'
+          ImageIndex = 1
+        end
+        object TabSheet3: TTabSheet
+          Caption = 'NUDEM'
+          ImageIndex = 2
+        end
+        object TabSheet4: TTabSheet
+          Caption = 'MP'
+          ImageIndex = 3
+        end
+        object TabSheet5: TTabSheet
+          Caption = 'SOLICITA'#199#213'ES'
+          ImageIndex = 4
+        end
+        object TabSheet6: TTabSheet
+          Caption = 'INICIATIVA'
+          ImageIndex = 5
+        end
+      end
     end
   end
   object MainMenu1: TMainMenu

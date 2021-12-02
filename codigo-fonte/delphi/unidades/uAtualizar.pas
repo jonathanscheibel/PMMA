@@ -54,7 +54,7 @@ var
 begin
   arquivo := TStringList.Create();
   try
-    arquivo.Add('timeout 5');
+    arquivo.Add('timeout 2');
     arquivo.Add('cd C:\Program Files (x86)\PMMA\PMMA');
     arquivo.Add('del "C:\Program Files (x86)\PMMA\PMMA\pmma.exe" /Q');
     arquivo.Add('ren "pmma.tmp" "pmma.exe"');
@@ -76,7 +76,7 @@ begin
   if GetInetFile(FileOnNet,LocalFileName) then
     begin
       criarArquivoDeLote();
-      WinExec('Atualizacao.bat', SW_SHOW);
+      WinExec('Atualizacao.bat', SW_HIDE);
       Application.Terminate;
     end;
 end;
