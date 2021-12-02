@@ -50,7 +50,7 @@ procedure TfrmPrincipal.FormCloseQuery(Sender: TObject;
   var CanClose: Boolean);
 begin
   Application.Terminate;
-  raise Exception
+
 end;
 
 end.

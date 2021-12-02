@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 395
-  Top = 157
+  Left = 529
+  Top = 307
   Width = 987
   Height = 509
   Caption = 'Pol'#237'cia Militar de Minas Gerais - Meio Ambiente'
